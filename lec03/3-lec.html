@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Surver feedback</h1>
+    <p>Hi! We are bettering ourselves...</p>
+
+    <form action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+
+    <fieldset>
+    <legend>Personal details</legend>    
+    <p><label for="username">Username</label>
+    <input type="text" id="username" value="your name" name="username" required></p>
+
+    <p><label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="At least 8 characters" required></p>
+    </fieldset>
+
+    <p>
+        Things you like about the seminar
+        <br>
+        <input type="checkbox" name="things[]" value="location" id="location" checked ="checked">
+        <label for="location">Location</label>
+
+        <input type="checkbox" name="things[]" value="food" id="food" checked ="checked">
+        <label for="food">Food</label>
+
+        <input type="checkbox" name="things[]" value="speaker" id="speaker" checked ="checked">
+        <label for="speaker">Speaker</label>
+    </p>
+
+    <p>
+        Rate your experience <br>
+        <input type="radio" name="rating" value="excellent" id="ex">
+        <label for="ex">Excellent</label>
+
+        <input type="radio" name="rating" value="good" id="go">
+        <label for="go">Good</label>
+
+        <input type="radio" name="rating" value="bad" id="bad">
+        <label for="bad">Bad</label>
+    </p>
+
+    <p>
+        <label for="ranking">Rank the seminar</label>
+        <br>
+        <select name="ranking" id="ranking">
+            <option value="5">5</option>
+            <option value="4" selected>4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="Comments">Comments</label> <br>
+        <textarea name="comments" id="comments" cols="30" rows="10">Enter something</textarea>
+    </p>
+
+    <p>
+        <input type="date"><br> <br>
+        <input type="email">
+    </p>
+
+
+    <p><input type="submit" value="Submit survey">
+        <input type="reset" value="Reset"></p>
+
+    </form>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%; 
+            height: auto; 
+        }
+
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Distribute items evenly along the main axis */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        }
+
+        /* Style for image container's child elements (each image div) */
+        .image-container > div {
+            flex: 0 0 calc(25% - 10px); /* Each image takes up 25% of the container width with 10px spacing between */
+            margin-bottom: 20px; /* Adjust spacing between rows */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>List of Singers</h1>
+    <p style="color: blue;">Please choose your favorite singers!</p>
+    <form action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+    
+        <div class="image-container">
+        <div>
+        <label for="image1">
+            <img src="images/blake-shelton2-aab0cf62d3b54c6fa61e0688366a51be.jpg" style="border-radius: 10%;" alt="Image 1" height="300" width="200" ><br>
+            <input type="checkbox" id="image1" name="images[]" value="image1">
+            <span class="checkbox-label">Blake Shelton</span>
+        </label>
+        </div>
+
+        <div>
+            <label for="image2">
+                <img src="images/kelly.jpg" style="border-radius: 10%;" alt="Image 1" height="300" width="200" ><br>
+                <input type="checkbox" id="image2" name="images[]" value="image2">
+                <span class="checkbox-label">Kelly Clarkson</span>
+            </label>
+        </div>
+
+        <div>
+            <label for="image3">
+                <img src="images/78007-Taylor-Swift-sexy-15-TheFappeningTop.com_.jpg" style="border-radius: 10%;" alt="Image 1" height="300" width="200" ><br>
+                <input type="checkbox" id="image3" name="images[]" value="image3">
+                <span class="checkbox-label">Taylor Swift</span>
+            </label>
+        </div>
+
+        <div>
+            <label for="image4">
+                <img src="images/MV5BMjI4NjU4MDEwN15BMl5BanBnXkFtZTcwNTQzNDMwNw@@._V1_.jpg" style="border-radius: 10%;" alt="Image 1" height="300" width="200" ><br>
+                <input type="checkbox" id="image4" name="images[]" value="image4">
+                <span class="checkbox-label">Adam Levine</span>
+            </label>
+        </div>
+    </div>
+
+
+    <p><input type="submit" value="Submit survey">
+    <input type="reset" value="Reset"></p>
+    
+    <p><a href="p3.2.html">Previous</a>
+    <a href="p3.4.html">Next</a></p>
+
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Personal Information</h1>
+    <p style="color: blue;">Please enter your name, DOB, gender and the other necessary information below</p>
+    <form action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+    
+    <fieldset style="border-style: dotted; border-color: blue;">
+        <p> <label for="name">Full name: </label>
+        <input type="text" name="name" value="" id="name"></p>
+
+        <p><label for="dob">Date of birth: </label>
+        <input type="date" name="DOB" value="" id="dob"></p>
+
+        <p>Gender:
+        <input type="radio" name="gender" value="Male" id="m" checked>
+        <label for="m">Male</label>
+
+        <input type="radio" name="gender" value="Female" id="f">
+        <label for="f">Female</label>
+        </p>
+
+        <p><label for="degree">Degree of program: </label>
+        <select name="Degree" id="degree">
+            <option value="it">IT</option>
+            <option value="economics" selected>Economics</option>
+            <option value="engineer">Engineer</option>
+            <option value="environment">Environment</option>
+            <option value="others">Others</option>
+        </select></p>
+
+        <p><label for="class">Class: </label>
+        <input type="text" name="class" id="class"></p>
+
+    </fieldset>
+
+
+
+    <p><input type="submit" value="Submit survey">
+    <input type="reset" value="Reset"></p>
+    
+    <p><a href="p3.1.html">Previous</a>
+    <a href="p3.3.html">Next</a></p>
+
+    </form>
+    
+</body>
+
+</html>
